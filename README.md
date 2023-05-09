@@ -4,8 +4,6 @@ J'ai commencé ce projet car je voulais continuer à m'exercer sur le framework 
 J'ai eu envie de me challenger sur ce Dictionnaire avec une API en React grâce à ce site : [Frontend Mentor](https://www.frontendmentor.io/).
 J'ai adoré faire ce projet malgré le temps passé dessus et suis très fier du résultat.
 
-Démo : [Dictionnaire](https://rcdsdw.github.io/Dictionary/)
-
 Outils Utilisés
 
 - React
