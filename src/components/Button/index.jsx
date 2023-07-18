@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
+const ButtonColor = styled.div`
+    
+`
+
 const ButtonTheme = styled.button `
     position: absolute;
     width: 30px;
@@ -35,12 +39,14 @@ function Button() {
     return (
         <ButtonTheme type="button" id="themeButton" name="themeButton" onClick={handleClick}>
             <StyledIcon>
-                {currentTheme === 'dark' 
-                ? 
-                <FontAwesomeIcon icon={faSun} style={{color: "#ffffff"}}/> 
-                : 
-                <FontAwesomeIcon icon={faMoon} style={{color: "#000000"}}/>
-                }
+                <ButtonColor>
+                    {currentTheme === 'dark' 
+                    ? 
+                    <FontAwesomeIcon icon={faSun} style={{color: "#ffffff"}}/> 
+                    : 
+                    <FontAwesomeIcon icon={faMoon} style={{color: "#000000"}}/>
+                    }
+                </ButtonColor>
             </StyledIcon>
         </ButtonTheme>
     )

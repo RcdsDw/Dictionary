@@ -1,5 +1,6 @@
 {
   "name": "dictionnaire",
+  "homepage": "https://rcdsdw.github.io/Dictionary/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

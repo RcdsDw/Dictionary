@@ -41,6 +41,10 @@ const ExVerb = styled.div `
     color: ${props => props.theme.greyLight};
 `
 
+const SynAntVerbContainer = styled.div`
+    margin: 5vh 0px 4vh 0px;    
+`
+
 const SynVerbContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -116,6 +120,10 @@ const ExAdj = styled.div `
     color: ${props => props.theme.greyLight};
 `
 
+const SynAntAdjContainer = styled.div`
+    margin: 5vh 0px 4vh 0px;
+`
+
 const SynAdjContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -172,18 +180,20 @@ function Meanings({verbs, adjectives}) {
                                 </ExVerb>
                             </VerbWrapper>    
                         ))}
-                        <SynVerbContainer>
-                            {verb.synonyms.length > 0 && <SynVerbTitle>Synonyms</SynVerbTitle>}
-                            {verb.synonyms && verb.synonyms.map((synonym, index) => (
-                                <SynVerb id="synVerb" key={`synVerb-word-${index}`}>{synonym}, </SynVerb>
-                            ))}
-                        </SynVerbContainer>
-                        <AntVerbContainer>
-                            {verb.antonyms.length > 0 && <AntVerbTitle>Antonyms</AntVerbTitle>}
-                            {verb.antonyms && verb.antonyms.map((antonym, index) => (
-                                <AntVerb id="antVerb" key={`antVerb-word-${index}`}>{antonym}, </AntVerb>
-                            ))}
-                        </AntVerbContainer>
+                        <SynAntVerbContainer>
+                            <SynVerbContainer>
+                                {verb.synonyms.length > 0 && <SynVerbTitle>Synonyms</SynVerbTitle>}
+                                {verb.synonyms && verb.synonyms.map((synonym, index) => (
+                                    <SynVerb id="synVerb" key={`synVerb-word-${index}`}>{synonym}, </SynVerb>
+                                ))}
+                            </SynVerbContainer>
+                            <AntVerbContainer>
+                                {verb.antonyms.length > 0 && <AntVerbTitle>Antonyms</AntVerbTitle>}
+                                {verb.antonyms && verb.antonyms.map((antonym, index) => (
+                                    <AntVerb id="antVerb" key={`antVerb-word-${index}`}>{antonym}, </AntVerb>
+                                ))}
+                            </AntVerbContainer>
+                        </SynAntVerbContainer>
                     </VerbContainer>
                 ))}
 
@@ -203,18 +213,20 @@ function Meanings({verbs, adjectives}) {
                                 </ExAdj>
                             </AdjWrapper>    
                         ))}
-                        <SynAdjContainer>
-                            {adjective.synonyms.length > 0 && <SynAdjTitle>Synonyms</SynAdjTitle>}
-                            {adjective.synonyms && adjective.synonyms.map((synonym, index) => (
-                                <SynAdj id="synAdj" key={`synAdj-word-${index}`}>{synonym}, </SynAdj>
-                            ))}
-                        </SynAdjContainer>
-                        <AntAdjContainer>
-                            {adjective.antonyms.length > 0 && <AntAdjTitle>Antonyms</AntAdjTitle>}
-                            {adjective.antonyms && adjective.antonyms.map((antonym, index) => (
-                                <AntAdj id="antAdj" key={`antAdj-word-${index}`}>{antonym}, </AntAdj>
-                            ))}
-                        </AntAdjContainer>
+                        <SynAntAdjContainer>
+                            <SynAdjContainer>
+                                {adjective.synonyms.length > 0 && <SynAdjTitle>Synonyms</SynAdjTitle>}
+                                {adjective.synonyms && adjective.synonyms.map((synonym, index) => (
+                                    <SynAdj id="synAdj" key={`synAdj-word-${index}`}>{synonym}, </SynAdj>
+                                ))}
+                            </SynAdjContainer>
+                            <AntAdjContainer>
+                                {adjective.antonyms.length > 0 && <AntAdjTitle>Antonyms</AntAdjTitle>}
+                                {adjective.antonyms && adjective.antonyms.map((antonym, index) => (
+                                    <AntAdj id="antAdj" key={`antAdj-word-${index}`}>{antonym}, </AntAdj>
+                                ))}
+                            </AntAdjContainer>
+                        </SynAntAdjContainer>
                     </AdjContainer>
                 ))}
         </MeaningsContainer>
