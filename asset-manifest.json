@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dictionary/static/css/main.67715e3e.css",
+    "main.js": "/Dictionary/static/js/main.4dd649d2.js",
+    "static/media/Inter.ttf": "/Dictionary/static/media/Inter.aadb65ac45347ff46699.ttf",
+    "static/media/Inter-Regular.ttf": "/Dictionary/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "index.html": "/Dictionary/index.html",
+    "main.67715e3e.css.map": "/Dictionary/static/css/main.67715e3e.css.map",
+    "main.4dd649d2.js.map": "/Dictionary/static/js/main.4dd649d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67715e3e.css",
+    "static/js/main.4dd649d2.js"
+  ]
+}
